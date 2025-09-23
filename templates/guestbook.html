@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Guestbook{% endblock %}
+{% block head %}
+{% endblock %}
+{% block content %}
+<h1>Sign up for the guest list</h1>
+    <form method="post" action="/submitted">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="First_Name">
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="Last_Name">
+        <input type="submit" value="Save">
+    </form>
+    <h2>Guests List</h2>
+    <div id="Guest_Subs"></div>
+{% endblock %}

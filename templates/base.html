@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/style.css"/>
+    <title>{% block title %}Base{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><a href="/">Home</a></li>
+            <li><a href="/guestbook">Guestlist</a></li>
+        </ol>
+    </nav>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <footer>
+            <p>&copy; Copyright 2007 by <a href="http://domain.invalid/">you</a><br>
+            Contact us on social media: <a href="https://facebook.com/">Facebook</a></p>
+    </footer>
+        
+</body>
+</html>
