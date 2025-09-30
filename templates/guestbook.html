@@ -5,12 +5,28 @@
 {% block content %}
 <h1>Sign up for the guest list</h1>
     <form method="post" action="/submitted">
-        <label for="fname">First Name:</label>
+        <label for="fname">Full Name:</label>
         <input type="text" name="fname">
-        <label for="lname">Last Name:</label>
-        <input type="text" name="lname">
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+        <label for="time">What time will you arrive:</label>
+        <input type="time" name="time">
         <input type="submit" value="Save">
     </form>
-    <h2>Guests List</h2>
-    <div id="Guest_Subs"></div>
+<h2>Guests List</h2>
+<div id="Guest_Subs">
+    <ul>
+    {% if guests %}
+        {% for guest in guests %}
+            <li>
+                <strong>Name:</strong> {{ guest.Name }}<br>
+                <strong>Email:</strong> {{ guest.Email }}<br>
+                <strong>Time:</strong> {{ guest.Time }}
+            </li>
+        {% endfor %}
+    {% else %}
+        <li>No guests have signed up yet.</li>
+    {% endif %}
+    </ul>
+</div>
 {% endblock %}
