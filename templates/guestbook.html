@@ -3,7 +3,7 @@
 {% block head %}
 {% endblock %}
 {% block content %}
-<h1>Sign up for the guest list</h1>
+<h1>Reserve a spot with the guest list</h1>
     <form method="post" action="/submitted">
         <label for="fname">Full Name:</label>
         <input type="text" name="fname">
@@ -19,9 +19,9 @@
     {% if guests %}
         {% for guest in guests %}
             <li>
-                <strong>Name:</strong> {{ guest.Name }}<br>
-                <strong>Email:</strong> {{ guest.Email }}<br>
-                <strong>Time:</strong> {{ guest.Time }}
+                Name: {{ guest.Name }}<br>
+                Email: {{ guest.Email }}<br>
+                Time: {{ guest.Time }}
             </li>
         {% endfor %}
     {% else %}

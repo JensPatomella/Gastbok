@@ -1,12 +1,17 @@
 [
     {
-        "Name": "Herro",
-        "Email": "Chhar@en.ru",
-        "Time": "22:15"
-    },
-    {
         "Name": "John",
         "Email": "jonathan@gmail.coom",
-        "Time": "12:59"
+        "Time": "19:30"
+    },
+    {
+        "Name": "Billy",
+        "Email": "billy@gmail.com",
+        "Time": "18:45"
+    },
+    {
+        "Name": "Adam",
+        "Email": "a.smith@gmail.com",
+        "Time": "20:00"
     }
 ]
